@@ -58,6 +58,7 @@ export const Amount = styled.Text<TypeProps>`
 
   color: ${({ theme, type }) => 
   type === 'total' ? theme.colors.shape : theme.colors.text_dark};
+  
   margin-top: 38px;
 `;
 
