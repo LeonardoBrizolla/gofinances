@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 interface TransactionProps {
   type: 'positive' | 'negative';
@@ -9,15 +9,10 @@ interface TransactionProps {
 export const Container = styled.View`
   background-color: ${({ theme}) => theme.colors.shape};
   border-radius: 5px;
-  
-  width: 100%;
 
   padding: 18px 24px;
 
   margin-bottom: 16px;
-`;
-
-export const Header = styled.View`
 `;
 
 export const Title = styled.Text`
