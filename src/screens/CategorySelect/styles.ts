@@ -46,7 +46,7 @@ export const Category = styled.TouchableOpacity<CategoryProps>`
 `;
 
 export const Icon = styled(Feather)`
-  font-size: ${RFValue(20)};
+  font-size: ${RFValue(20)}px;
   margin-right: 16px;
 `;
 
