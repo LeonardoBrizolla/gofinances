@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { Platform } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -7,7 +8,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   width: 100%;
-  height: 70%;
+  height: ${Platform.OS === 'ios' ? 70 : 85}%;
 
   background-color: ${({ theme }) => theme.colors.primary};
 
